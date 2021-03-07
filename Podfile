@@ -7,6 +7,10 @@ target 'PediaTrac' do
 
   # Pods for PediaTrac
   pod 'NavigationStack'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
 
   target 'PediaTracTests' do
     inherit! :search_paths
