@@ -69,6 +69,10 @@ struct TitleView: View {
 
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
-        TitleView()
+        Group {
+            TitleView()
+            TitleView()
+                .environment(\.locale, .init(identifier: "es"))
+        }
     }
 }

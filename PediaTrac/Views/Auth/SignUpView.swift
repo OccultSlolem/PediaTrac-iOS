@@ -39,7 +39,7 @@ struct SignUpView: View {
             //Register text
             Group {
                 HStack {
-                    Text("Register")
+                    Text("Sign up")
                         .font(.largeTitle)
                         .padding(.leading)
                     
@@ -83,7 +83,7 @@ struct SignUpView: View {
                     .padding(.bottom)
                 
                 // Register button
-                CustomStyledTextButton(title: "Register", action: {
+                CustomStyledTextButton(title: "Sign up", action: {
                     emailPasswordRegister()
                 })
                 

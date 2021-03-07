@@ -1,0 +1,68 @@
+/* 
+  Localizable.strings
+  PediaTrac
+
+  Created by Ethan Hanlon on 3/7/21.
+  
+*/
+
+"Keep track of your young child's appointments" = "Lleve un registro de las citas de su hijo pequeño";
+"Login" = "Inicio de sesión";
+"Sign up" = "Regístrese";
+"Or" = "O";
+"Sign in Anonymously" = "Iniciar sesión de forma anónima";
+"Something went wrong" = "Algo salió mal";
+
+"Back" = "Volver";
+
+"Delete Account" = "Borrar la cuenta";
+"Please reenter your password to confirm" = "Vuelva a introducir su contraseña para confirmarla";
+"Failed" = "Fallido";
+"Please enter your password" = "Por favor, introduzca su contraseña";
+"We're sorry to see you go!"= "Sentimos que te vayas";
+"Any information you gave to us will be immediately deleted. This action is not reversible." = "Cualquier información que nos haya proporcionado será inmediatamente eliminada. Esta acción no es reversible.";
+
+"Sign up with email and password" = "Regístrese con correo electrónico y contraseña";
+"Email" = "Correo electrónico";
+"Password" = "Contraseña";
+"Confirm password" = "Confirmar contraseña";
+"Terms" = "Términos";
+"Privacy" = "Privacidad";
+"Passwords don't match" = "Las contraseñas no coinciden";
+"The passwords fields do not match with each other." = "Los campos de las contraseñas no coinciden entre sí.";
+"Password not long enough" = "La contraseña no es lo suficientemente larga";
+"Your password must be at least 8 characters." = "Su contraseña debe tener al menos 8 caracteres.";
+"Please enter an email address" = "Introduzca una dirección de correo electrónico";
+"Either the email field was left empty, or a valid email was not entered." = "El campo de correo electrónico se ha dejado vacío o no se ha introducido un correo electrónico válido.";
+
+"Sign in" = "Inicio de sesión";
+"Forgot?" = "¿Lo has olvidado?";
+"Sign in failed" = "Fallo en el registro";
+"Please enter an email and password" = "Por favor, introduzca un correo electrónico y una contraseña";
+
+"Reset Password" = "Restablecer contraseña";
+"Reset failed" = "Fallo en el reinicio";
+"Something went wrong. Make sure you entered your email correctly and try again" = "Algo ha ido mal. Asegúrese de que ha introducido su correo electrónico correctamente y vuelva a intentarlo";
+"Check your email for a link to reset your password" = "Compruebe su correo electrónico para ver un enlace para restablecer su contraseña";
+
+"Appointments" = "Citas";
+
+"Your Children" = "Sus hijos";
+"You don't seem to have any children added yet." = "Parece que todavía no tienes ningún niño añadido.";
+"Why don't you add some below?" = "¿Por qué no añade algo más abajo?";
+"Log Out" = "Cerrar la sesión";
+"Failed to sign out" = "No se ha podido cerrar la sesión";
+"Something broke on our end. Try signing out again or restarting." = "Algo se ha roto en nuestro lado. Intenta cerrar la sesión de nuevo o reiniciar.";
+"Delete all" = "Borrar todo";
+"Add Child" = "Añadir niño";
+
+"Based on your child's age, we recommend they see a pediatrician at these dates:" = "Según la edad de su hijo, le recomendamos que acuda al pediatra en estas fechas:";
+"Save to calendar" = "Guardar en el calendario";
+"Vaccines" = "Vacunas";
+"Guardado" = "Este evento ha sido guardado en su calendario";
+
+"We just need to know how old they are" = "Sólo necesitamos saber la edad que tienen";
+"You can also provide their name to help keep track of them, if you like" = "Si lo desea, también puede indicar su nombre para facilitar su seguimiento";
+"Name (Optional)" = "Nombre (opcional)";
+"Birthday" = "Cumpleaños";
+"Confirm" = "Confirmar";

@@ -65,7 +65,7 @@ struct ResetPasswordView: View {
                     //If no email is input
                     if(email == "") {
                         alertTitle = "Reset failed"
-                        alertMsg = "Please insert an email"
+                        alertMsg = "Please insert an email address"
                         showingAlert = true
                     } else {
                         

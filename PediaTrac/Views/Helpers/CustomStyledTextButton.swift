@@ -33,7 +33,7 @@ struct CustomStyledTextButton: View {
         Button(action: action) {
             HStack {
                 Spacer()
-                Text(title)
+                Text(LocalizedStringKey(title))
                     .padding()
                     .accentColor(.white)
                     .font(.title2)
