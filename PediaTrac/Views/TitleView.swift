@@ -57,10 +57,12 @@ struct TitleView: View {
                         alertMsg = error.localizedDescription
                         showingAlert = true
                     } else {
-                        navigationStack.push(ProfileView())
+                        navigationStack.push(ChildListView()
+                                                .environmentObject(ChildData()))
                     }
                 }
             })
+            .padding(.bottom)
         }
     }
 }

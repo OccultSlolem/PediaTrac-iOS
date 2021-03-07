@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32013D2F25F4A2D7001B0889 /* ChildAppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32013D2E25F4A2D7001B0889 /* ChildAppointmentsView.swift */; };
+		32013D3725F4ADE0001B0889 /* ChildListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32013D3625F4ADE0001B0889 /* ChildListView.swift */; };
 		3226A57425F483FB00F5DBD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3226A57325F483FB00F5DBD7 /* GoogleService-Info.plist */; };
 		3226A5CE25F4883800F5DBD7 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5C625F4883800F5DBD7 /* TitleView.swift */; };
 		3226A5CF25F4883800F5DBD7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5C725F4883800F5DBD7 /* ProfileView.swift */; };
@@ -20,6 +22,8 @@
 		3226A5F025F4917A00F5DBD7 /* ChildStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5EF25F4917A00F5DBD7 /* ChildStruct.swift */; };
 		3226A5F525F4921B00F5DBD7 /* ChildData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5F425F4921B00F5DBD7 /* ChildData.swift */; };
 		3226A5FA25F4969C00F5DBD7 /* AddChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5F925F4969C00F5DBD7 /* AddChildView.swift */; };
+		322FB70825F4BD3000B5F58D /* ChildListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FB70725F4BD3000B5F58D /* ChildListRow.swift */; };
+		322FB70D25F4DCC500B5F58D /* DeleteAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322FB70C25F4DCC500B5F58D /* DeleteAccountView.swift */; };
 		328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074EB25F481E400B0A54A /* PediaTracApp.swift */; };
 		328074EE25F481E400B0A54A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074ED25F481E400B0A54A /* ContentView.swift */; };
 		328074F025F481E600B0A54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328074EF25F481E600B0A54A /* Assets.xcassets */; };
@@ -50,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		2C5D7044BB62ABA8254C7E0D /* Pods-PediaTracTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediaTracTests.debug.xcconfig"; path = "Target Support Files/Pods-PediaTracTests/Pods-PediaTracTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32013D2E25F4A2D7001B0889 /* ChildAppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildAppointmentsView.swift; sourceTree = "<group>"; };
+		32013D3625F4ADE0001B0889 /* ChildListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListView.swift; sourceTree = "<group>"; };
 		3226A57325F483FB00F5DBD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3226A5C625F4883800F5DBD7 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		3226A5C725F4883800F5DBD7 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		3226A5EF25F4917A00F5DBD7 /* ChildStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildStruct.swift; sourceTree = "<group>"; };
 		3226A5F425F4921B00F5DBD7 /* ChildData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildData.swift; sourceTree = "<group>"; };
 		3226A5F925F4969C00F5DBD7 /* AddChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildView.swift; sourceTree = "<group>"; };
+		322FB70725F4BD3000B5F58D /* ChildListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListRow.swift; sourceTree = "<group>"; };
+		322FB70C25F4DCC500B5F58D /* DeleteAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountView.swift; sourceTree = "<group>"; };
 		328074E825F481E400B0A54A /* PediaTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PediaTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328074EB25F481E400B0A54A /* PediaTracApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediaTracApp.swift; sourceTree = "<group>"; };
 		328074ED25F481E400B0A54A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,13 +121,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32013D2D25F4A2BF001B0889 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				3226A5F925F4969C00F5DBD7 /* AddChildView.swift */,
+				32013D2E25F4A2D7001B0889 /* ChildAppointmentsView.swift */,
+				32013D3625F4ADE0001B0889 /* ChildListView.swift */,
+				322FB70725F4BD3000B5F58D /* ChildListRow.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
 		3226A5C525F4883800F5DBD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32013D2D25F4A2BF001B0889 /* Child */,
 				3226A5FE25F496A400F5DBD7 /* Auth */,
 				3226A5C625F4883800F5DBD7 /* TitleView.swift */,
 				3226A5CB25F4883800F5DBD7 /* Helpers */,
-				3226A5F925F4969C00F5DBD7 /* AddChildView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +177,7 @@
 				3226A5C825F4883800F5DBD7 /* ResetPasswordView.swift */,
 				3226A5C925F4883800F5DBD7 /* SignInView.swift */,
 				3226A5CA25F4883800F5DBD7 /* SignUpView.swift */,
+				322FB70C25F4DCC500B5F58D /* DeleteAccountView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -496,11 +516,15 @@
 				3226A5CF25F4883800F5DBD7 /* ProfileView.swift in Sources */,
 				328074EE25F481E400B0A54A /* ContentView.swift in Sources */,
 				3226A5D425F4883800F5DBD7 /* CustomStyledTextField.swift in Sources */,
+				32013D3725F4ADE0001B0889 /* ChildListView.swift in Sources */,
 				3226A5FA25F4969C00F5DBD7 /* AddChildView.swift in Sources */,
+				322FB70D25F4DCC500B5F58D /* DeleteAccountView.swift in Sources */,
 				3226A5D225F4883800F5DBD7 /* SignUpView.swift in Sources */,
 				3226A5D025F4883800F5DBD7 /* ResetPasswordView.swift in Sources */,
+				322FB70825F4BD3000B5F58D /* ChildListRow.swift in Sources */,
 				328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */,
 				3226A5CE25F4883800F5DBD7 /* TitleView.swift in Sources */,
+				32013D2F25F4A2D7001B0889 /* ChildAppointmentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

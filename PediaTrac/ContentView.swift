@@ -12,7 +12,8 @@ struct ContentView: View {
     var body: some View {
         if Auth.auth().currentUser != nil {
             // User is signed in
-            ProfileView()
+            ChildListView()
+                .environmentObject(ChildData())
         } else {
             // No user is signed in
             TitleView()

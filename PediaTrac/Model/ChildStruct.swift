@@ -12,6 +12,5 @@ import FirebaseFirestoreSwift
 struct Child: Identifiable, Codable {
     @DocumentID var id: String?
     var name: String
-    var appointments: [FirebaseFirestore.Timestamp]
-    
+    var appointments: [Date]
 }

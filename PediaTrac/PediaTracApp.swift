@@ -11,6 +11,7 @@ import NavigationStack
 
 @main
 struct PediaTracApp: App {
+    @StateObject private var childData = ChildData()
     @UIApplicationDelegateAdaptor(Delegate.self) var delegate
     var body: some Scene {
         WindowGroup {

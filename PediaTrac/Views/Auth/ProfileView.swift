@@ -14,7 +14,7 @@ struct ProfileView: View {
     let currentUser = Auth.auth().currentUser
     @EnvironmentObject private var navigationStack: NavigationStack
     
-    //Alert box
+    // Alert box
     @State private var showingAlert = false
     @State private var alertTitle = ""
     @State private var alertMsg = ""
@@ -23,7 +23,7 @@ struct ProfileView: View {
     var body: some View {
         
         VStack {
-            //Alert handler
+            // Alert handler
             Button(action: {
                     print("Alert")
 

@@ -12,17 +12,20 @@ import NavigationStack
 struct SignUpView: View {
     @EnvironmentObject private var navigationStack: NavigationStack
     
+    // User inputs
     @State private var email = ""
     @State private var password = ""
     @State private var passwordConfirm = ""
     @State private var usrMessage = ""
+    
+    // Alert box
     @State private var showingAlert = false
     @State private var alertTitle = ""
     @State private var alertMsg = ""
     
     var body: some View {
         VStack {
-            //Alert handler
+            // Alert handler
             Button(action: {
                 print("Alert")
             }, label: {
@@ -31,6 +34,7 @@ struct SignUpView: View {
             .alert(isPresented: $showingAlert, content: {
                 Alert(title: Text(alertTitle), message: Text(alertMsg), dismissButton: .default(Text("OK")))
             })
+            .hidden()
             
             //Register text
             Group {
@@ -100,7 +104,7 @@ struct SignUpView: View {
         }
     }
     
-    //MARK: - Sign up user
+    // MARK: - Sign up user
     func emailPasswordRegister() {
         //Check for email
         if(isValidEmail(email)) {
@@ -122,7 +126,8 @@ struct SignUpView: View {
                         // Send email verification and push to next view
                         sleep(UInt32(0.5))
                         user.sendEmailVerification(completion: nil)
-                        self.navigationStack.push(ProfileView())
+                        self.navigationStack.push(ChildListView()
+                                                    .environmentObject(ChildData()))
                         
                     }
                 } else {
@@ -142,8 +147,8 @@ struct SignUpView: View {
         }
     }
     
-    //MARK: - Check email
-    //With thanks to Maxim Shoustin on StackOverflow
+    // MARK: - Check email
+    // With thanks to Maxim Shoustin on StackOverflow
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
