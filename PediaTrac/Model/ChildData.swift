@@ -10,25 +10,26 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 import FirebaseAuth
 
-// Number of seconds since birth that a child should be brought to pediatrician
+// Number of seconds since birth that a child should be brought to pediatrician, and the corresponding vaccines they should receive
+// Vaccines source: https://redbook.solutions.aap.org/selfserve/ssPage.aspx?SelfServeContentId=Immunization_Schedules
 let visitDurations = [
-    //60 seconds * 60 minutes * 24 hrs * 4 days
-    ((60*60*24) * 4), // 4 days
-    ((60*60*24) * 30), // 30 days
-    ((60*60*24) * 60),
-    ((60*60*24) * 120),
-    ((60*60*24) * 180),
-    //1 year
-    (31556952),
-    Int(31556952 * 1.3),
-    Int(31556952 * 1.5),
-    //2 year
-    (31556952 * 2),
-    Int(31556952 * 2.5),
-    (31556952 * 3),
-    (31556952 * 4),
-    (31556952 * 5)
-] as [Int]
+    // 60 seconds * 60 minutes * 24 hrs * 4 days
+    ((60*60*24) * 4): ["HepB 1st dose"], // 4 days HepB 1st dose
+    ((60*60*24) * 30): ["HepB 2nd dose"], // 30 days HepB 2nd dose
+    ((60*60*24) * 60): ["RV 1st dose", "DTap 1st dose", "Hib 1st dose", "PCV13 1st dose", "IPV 1st dose"],
+    ((60*60*24) * 120): ["RV 2nd dose", "DTap 2nd dose", "Hib 2nd dose", "PCV13 2nd dose", "IPV 2nd dose"],
+    ((60*60*24) * 180): ["RV 3rd dose", "DTap 3rd dose", "Hib 3rd dose", "PCV13 3rd dose", "IPV 3rd dose"],
+    // 1 year
+    (31556952): ["MMR 1st dose", "VAR 1st Dose", "HepA 1st dose", "Hib 4th dose", "PCV13 4th dose", "Annual flu vaccine"],
+    Int(31556952 * 1.3): ["DTap 4th dose", "HepA 2nd dose"],
+    Int(31556952 * 1.5): ["HebB 3rd dose", "IPV 3rd dose"],
+    // 2 year
+    (31556952 * 2): ["Annual flu vaccine"],
+    Int(31556952 * 2.5): [],
+    (31556952 * 3): ["Annual flu vaccine"],
+    (31556952 * 4): ["Annual flu vaccine", "DTap 5th dose", "IPV 4th dose", "MMR 2nd dose", "VAR 2n dose"],
+    (31556952 * 5): ["Annual flu vaccine"]
+]
 
 @available(iOS 13.0, *)
 final class ChildData: ObservableObject {
@@ -68,15 +69,17 @@ final class ChildData: ObservableObject {
                 let data = document.data()
                 
                 let birthday = data["birthday"] as? Timestamp ?? Timestamp(date: Date())
-                var appointments = [Date]()
+                var appointments = [Appointment]()
                 
                 // Calculate appointments based on child age
+                // visit.key: Int: Seconds since birth to bring child to pediatrician
+                // visit.value: [String]: Vaccines they should receive at this visit
                 for visit in visitDurations {
                     let birthdayEpochDate = birthday.dateValue().timeIntervalSince1970
                     let time = Date().timeIntervalSince1970
-                    if birthdayEpochDate + Double(visit) >= time {
+                    if birthdayEpochDate + Double(visit.key) >= time {
                         //Appointment time is in future, add to appointments array
-                        appointments.append(Date(timeIntervalSince1970: birthdayEpochDate + Double(visit)))
+                        appointments.append(Appointment(date: Date(timeIntervalSince1970: birthdayEpochDate + Double(visit.key)), vaccines: visit.value))
                     }
                 }
                 

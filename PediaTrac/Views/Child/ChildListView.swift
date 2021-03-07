@@ -15,7 +15,6 @@ struct ChildListView: View {
     @EnvironmentObject private var navigationStack: NavigationStack
     
     // Alert box
-    @State private var showingAccountDeletionAlert = false
     @State private var showingAlert = false
     @State private var alertTitle = ""
     @State private var alertMsg = ""

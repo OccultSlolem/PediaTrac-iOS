@@ -9,13 +9,30 @@ import SwiftUI
 import FirebaseFirestoreSwift
 import NavigationStack
 import EventKit
+import EventKitUI
+
 
 struct ChildAppointmentsView: View {
     @EnvironmentObject private var navigationStack: NavigationStack
     var child: Child
     
+    // Alert box
+    @State private var showingAlert = false
+    @State private var alertTitle = ""
+    @State private var alertMsg = ""
+    
     var body: some View {
         VStack {
+            // Alert handler
+            Button(action: {
+                print("Alert")
+            }, label: {
+                Text("")
+            })
+            .alert(isPresented: $showingAlert, content: {
+                Alert(title: Text(alertTitle), message: Text(alertMsg), dismissButton: .default(Text("OK")))
+            })
+            
             // Back button
             HStack {
                 Button(action: {
@@ -36,16 +53,29 @@ struct ChildAppointmentsView: View {
             Divider()
             
             ScrollView {
-                ForEach(child.appointments, id: \.self) { date in
+                ForEach(child.appointments, id: \.self) { appointment in
                     HStack {
-                        Text("• " + formatDate(date: date))
+                        Text("• " + formatDate(date: appointment.date))
                             .font(.headline)
+                        
                         Spacer()
+                        
                         Button(action: {
-                            addToCalendar(date: date)
+                            addToCalendar(date: appointment.date)
                         }, label: {
                             Text("Save to calendar")
                             Image(systemName: "calendar.badge.plus")
+                        })
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            alertTitle = "Vaccines"
+                            alertMsg = getVaccineList(vaccines: appointment.vaccines)
+                            showingAlert = true
+                        }, label: {
+                            Text("Vaccines")
+                            Image(systemName: "chevron.right")
                         })
                     }
                     .padding()
@@ -54,6 +84,17 @@ struct ChildAppointmentsView: View {
         }
     }
     
+    // MARK: - Format vaccine list
+    func getVaccineList(vaccines: [String]) -> String {
+        var returnValue = ""
+        for vaccine in vaccines {
+            returnValue = returnValue + "\n• \(vaccine)"
+        }
+        
+        return returnValue
+    }
+    
+    // MARK: Format date
     func formatDate(date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US")
@@ -62,6 +103,7 @@ struct ChildAppointmentsView: View {
         return dateFormatter.string(from: date)
     }
     
+    // MARK: - Add to calendar
     func addToCalendar(date: Date) {
         let eventStore: EKEventStore = EKEventStore()
         
@@ -77,12 +119,16 @@ struct ChildAppointmentsView: View {
                 event.endDate = date
                 event.notes = "Time for " + child.name + "'s appointment!"
                 event.calendar = eventStore.defaultCalendarForNewEvents
+                
                 do {
                     try eventStore.save(event, span: .thisEvent)
                 } catch let error as NSError {
                     print("failed to save event with error: \(error)")
                 }
-                print("Saved Event")
+                
+                alertTitle = "Saved"
+                alertMsg = "This event has been saved to your calendar"
+                showingAlert = true
             } else {
                 print("failed to save event with error: \(String(describing: error)) or access not granted")
             }
@@ -92,6 +138,6 @@ struct ChildAppointmentsView: View {
 
 struct ChildAppointmentsView_Previews: PreviewProvider {
     static var previews: some View {
-        ChildAppointmentsView(child: Child(id: "123", name: "This dood", appointments: [Date(timeIntervalSince1970: 1615098141)]))
+        ChildAppointmentsView(child: Child(id: "123", name: "This dood", appointments: [Appointment(date: Date(timeIntervalSince1970: 1615098141), vaccines: ["MMR"])]))
     }
 }

@@ -30,6 +30,8 @@
 		328074F325F481E600B0A54A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328074F225F481E600B0A54A /* Preview Assets.xcassets */; };
 		328074FE25F481E700B0A54A /* PediaTracTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074FD25F481E700B0A54A /* PediaTracTests.swift */; };
 		3280750925F481E700B0A54A /* PediaTracUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280750825F481E700B0A54A /* PediaTracUITests.swift */; };
+		32FFA4F325F54FE4006F3CCE /* AppointmentStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFA4F225F54FE4006F3CCE /* AppointmentStruct.swift */; };
+		32FFA4F825F55C0D006F3CCE /* VaccinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FFA4F725F55C0D006F3CCE /* VaccinesView.swift */; };
 		4C4E8970E1A591E7A60C687D /* Pods_PediaTracTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A7780A7221DF14B89564B1 /* Pods_PediaTracTests.framework */; };
 		BFBF90C2071DF407DB24A840 /* Pods_PediaTrac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30C9FC0734AF8517D031D1E /* Pods_PediaTrac.framework */; };
 		CC339409B11F68F7938675C9 /* Pods_PediaTrac_PediaTracUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508827BF8EACCEB7E3ECF9DF /* Pods_PediaTrac_PediaTracUITests.framework */; };
@@ -83,6 +85,8 @@
 		3280750425F481E700B0A54A /* PediaTracUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PediaTracUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3280750825F481E700B0A54A /* PediaTracUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediaTracUITests.swift; sourceTree = "<group>"; };
 		3280750A25F481E700B0A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FFA4F225F54FE4006F3CCE /* AppointmentStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentStruct.swift; sourceTree = "<group>"; };
+		32FFA4F725F55C0D006F3CCE /* VaccinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinesView.swift; sourceTree = "<group>"; };
 		508827BF8EACCEB7E3ECF9DF /* Pods_PediaTrac_PediaTracUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PediaTrac_PediaTracUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		866919F03A6CFC8228801FCA /* Pods-PediaTrac-PediaTracUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediaTrac-PediaTracUITests.debug.xcconfig"; path = "Target Support Files/Pods-PediaTrac-PediaTracUITests/Pods-PediaTrac-PediaTracUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		93B24672D6F0B5848D9680B9 /* Pods-PediaTrac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediaTrac.debug.xcconfig"; path = "Target Support Files/Pods-PediaTrac/Pods-PediaTrac.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				32013D2E25F4A2D7001B0889 /* ChildAppointmentsView.swift */,
 				32013D3625F4ADE0001B0889 /* ChildListView.swift */,
 				322FB70725F4BD3000B5F58D /* ChildListRow.swift */,
+				32FFA4F725F55C0D006F3CCE /* VaccinesView.swift */,
 			);
 			path = Child;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			children = (
 				3226A5EF25F4917A00F5DBD7 /* ChildStruct.swift */,
 				3226A5F425F4921B00F5DBD7 /* ChildData.swift */,
+				32FFA4F225F54FE4006F3CCE /* AppointmentStruct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -516,12 +522,14 @@
 				3226A5CF25F4883800F5DBD7 /* ProfileView.swift in Sources */,
 				328074EE25F481E400B0A54A /* ContentView.swift in Sources */,
 				3226A5D425F4883800F5DBD7 /* CustomStyledTextField.swift in Sources */,
+				32FFA4F325F54FE4006F3CCE /* AppointmentStruct.swift in Sources */,
 				32013D3725F4ADE0001B0889 /* ChildListView.swift in Sources */,
 				3226A5FA25F4969C00F5DBD7 /* AddChildView.swift in Sources */,
 				322FB70D25F4DCC500B5F58D /* DeleteAccountView.swift in Sources */,
 				3226A5D225F4883800F5DBD7 /* SignUpView.swift in Sources */,
 				3226A5D025F4883800F5DBD7 /* ResetPasswordView.swift in Sources */,
 				322FB70825F4BD3000B5F58D /* ChildListRow.swift in Sources */,
+				32FFA4F825F55C0D006F3CCE /* VaccinesView.swift in Sources */,
 				328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */,
 				3226A5CE25F4883800F5DBD7 /* TitleView.swift in Sources */,
 				32013D2F25F4A2D7001B0889 /* ChildAppointmentsView.swift in Sources */,

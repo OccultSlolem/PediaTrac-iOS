@@ -22,7 +22,7 @@ struct SignInView: View {
         
         
         VStack {
-            //Alert handler
+            // Alert handler
             Button(action: {
                 print("Alert")
             }, label: {
@@ -32,7 +32,7 @@ struct SignInView: View {
                 Alert(title: Text(alertTitle), message: Text(alertMsg), dismissButton: .default(Text("OK")))
             })
             
-            //Title
+            // Title
             HStack {
                 Text("Sign in")
                     .font(.largeTitle)
@@ -42,7 +42,7 @@ struct SignInView: View {
             }
             
             
-            //Back button
+            // Back button
             HStack {
                 Button(action: {
                     self.navigationStack.pop()
@@ -90,7 +90,7 @@ struct SignInView: View {
     
     // MARK: - Sign in user
     func emailPasswordSignIn() {
-        //Make sure user didn't leave any field empty
+        // Make sure user didn't leave any field empty
         if email == "" || password == "" {
             alertTitle = "Sign in failed"
             alertMsg = "Please enter an email and password"
@@ -98,11 +98,11 @@ struct SignInView: View {
         } else {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 if(error == nil) {
-                    //Login successful, push to ChildListView
+                    // Login successful, push to ChildListView
                     self.navigationStack.push(ChildListView()
                                                 .environmentObject(ChildData()))
                 } else {
-                    //Login failed, present error
+                    // Login failed, present error
                     print("Error signing in with email: \(String(describing: error))")
                     showingAlert = true
                 }

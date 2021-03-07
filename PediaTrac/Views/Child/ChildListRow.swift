@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
 import NavigationStack
 
 struct ChildListRow: View {
@@ -32,7 +34,11 @@ struct ChildListRow: View {
                 Alert(
                     title: Text("Are you sure you want to delete " + child.name + "?"), message: Text("You cannot undo this action"),
                     primaryButton: .destructive(Text("Delete")) {
-                        //TODO: Delete child
+                        let db = Firestore.firestore()
+                        
+                        db.document(
+                            "/users/\(Auth.auth().currentUser?.uid ?? "")/children/\(child.id ?? "")"
+                        ).delete()
                     },
                     secondaryButton: .cancel()
                 )
@@ -53,7 +59,7 @@ struct ChildListRow: View {
 
 struct ChildListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ChildListRow(child: Child(id: "123", name: "JimBob", appointments: [Date(timeIntervalSince1970: 1615103513)]))
+        ChildListRow(child: Child(id: "123", name: "JimBob", appointments: [Appointment(date: Date(timeIntervalSince1970: 1615103513), vaccines: ["MMR"])]))
             .previewLayout(.sizeThatFits)
     }
 }
