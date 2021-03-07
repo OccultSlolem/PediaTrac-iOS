@@ -58,7 +58,7 @@ The app uses Firebase to store and authenticate user accounts. Currently it uses
 
 ### Other setup
 
-Inside InfluPeach -> HelperScripts are some scripts that hold settings that are referenced by the views in this project several times, including
+Inside PediaTrac -> HelperScripts are some scripts that hold settings that are referenced by the views in this project several times, including
 - ``TermsPrivacy.swift``: Includes links to your Terms & Conditions and Privacy Policy. Referenced by the sign up view (the links in the view will correspond to what links you set them to in this file)
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
