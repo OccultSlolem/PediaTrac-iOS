@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3226A57425F483FB00F5DBD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3226A57325F483FB00F5DBD7 /* GoogleService-Info.plist */; };
+		3226A5CE25F4883800F5DBD7 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5C625F4883800F5DBD7 /* TitleView.swift */; };
+		3226A5CF25F4883800F5DBD7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5C725F4883800F5DBD7 /* ProfileView.swift */; };
+		3226A5D025F4883800F5DBD7 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5C825F4883800F5DBD7 /* ResetPasswordView.swift */; };
+		3226A5D125F4883800F5DBD7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5C925F4883800F5DBD7 /* SignInView.swift */; };
+		3226A5D225F4883800F5DBD7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5CA25F4883800F5DBD7 /* SignUpView.swift */; };
+		3226A5D325F4883800F5DBD7 /* CustomStyledTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5CC25F4883800F5DBD7 /* CustomStyledTextButton.swift */; };
+		3226A5D425F4883800F5DBD7 /* CustomStyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5CD25F4883800F5DBD7 /* CustomStyledTextField.swift */; };
+		3226A5DB25F4897400F5DBD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5D925F4897400F5DBD7 /* Colors.swift */; };
+		3226A5DC25F4897400F5DBD7 /* TermsPrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5DA25F4897400F5DBD7 /* TermsPrivacy.swift */; };
+		3226A5F025F4917A00F5DBD7 /* ChildStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5EF25F4917A00F5DBD7 /* ChildStruct.swift */; };
+		3226A5F525F4921B00F5DBD7 /* ChildData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5F425F4921B00F5DBD7 /* ChildData.swift */; };
+		3226A5FA25F4969C00F5DBD7 /* AddChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A5F925F4969C00F5DBD7 /* AddChildView.swift */; };
 		328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074EB25F481E400B0A54A /* PediaTracApp.swift */; };
 		328074EE25F481E400B0A54A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074ED25F481E400B0A54A /* ContentView.swift */; };
 		328074F025F481E600B0A54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328074EF25F481E600B0A54A /* Assets.xcassets */; };
@@ -39,6 +51,18 @@
 /* Begin PBXFileReference section */
 		2C5D7044BB62ABA8254C7E0D /* Pods-PediaTracTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediaTracTests.debug.xcconfig"; path = "Target Support Files/Pods-PediaTracTests/Pods-PediaTracTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3226A57325F483FB00F5DBD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3226A5C625F4883800F5DBD7 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		3226A5C725F4883800F5DBD7 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3226A5C825F4883800F5DBD7 /* ResetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		3226A5C925F4883800F5DBD7 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3226A5CA25F4883800F5DBD7 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3226A5CC25F4883800F5DBD7 /* CustomStyledTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStyledTextButton.swift; sourceTree = "<group>"; };
+		3226A5CD25F4883800F5DBD7 /* CustomStyledTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStyledTextField.swift; sourceTree = "<group>"; };
+		3226A5D925F4897400F5DBD7 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3226A5DA25F4897400F5DBD7 /* TermsPrivacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsPrivacy.swift; sourceTree = "<group>"; };
+		3226A5EF25F4917A00F5DBD7 /* ChildStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildStruct.swift; sourceTree = "<group>"; };
+		3226A5F425F4921B00F5DBD7 /* ChildData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildData.swift; sourceTree = "<group>"; };
+		3226A5F925F4969C00F5DBD7 /* AddChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildView.swift; sourceTree = "<group>"; };
 		328074E825F481E400B0A54A /* PediaTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PediaTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328074EB25F481E400B0A54A /* PediaTracApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediaTracApp.swift; sourceTree = "<group>"; };
 		328074ED25F481E400B0A54A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +113,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3226A5C525F4883800F5DBD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3226A5FE25F496A400F5DBD7 /* Auth */,
+				3226A5C625F4883800F5DBD7 /* TitleView.swift */,
+				3226A5CB25F4883800F5DBD7 /* Helpers */,
+				3226A5F925F4969C00F5DBD7 /* AddChildView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3226A5CB25F4883800F5DBD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3226A5CC25F4883800F5DBD7 /* CustomStyledTextButton.swift */,
+				3226A5CD25F4883800F5DBD7 /* CustomStyledTextField.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3226A5D825F4897400F5DBD7 /* HelperScripts */ = {
+			isa = PBXGroup;
+			children = (
+				3226A5D925F4897400F5DBD7 /* Colors.swift */,
+				3226A5DA25F4897400F5DBD7 /* TermsPrivacy.swift */,
+			);
+			path = HelperScripts;
+			sourceTree = "<group>";
+		};
+		3226A5E325F4914E00F5DBD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3226A5EF25F4917A00F5DBD7 /* ChildStruct.swift */,
+				3226A5F425F4921B00F5DBD7 /* ChildData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3226A5FE25F496A400F5DBD7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3226A5C725F4883800F5DBD7 /* ProfileView.swift */,
+				3226A5C825F4883800F5DBD7 /* ResetPasswordView.swift */,
+				3226A5C925F4883800F5DBD7 /* SignInView.swift */,
+				3226A5CA25F4883800F5DBD7 /* SignUpView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		328074DF25F481E300B0A54A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +187,9 @@
 		328074EA25F481E400B0A54A /* PediaTrac */ = {
 			isa = PBXGroup;
 			children = (
+				3226A5E325F4914E00F5DBD7 /* Model */,
+				3226A5D825F4897400F5DBD7 /* HelperScripts */,
+				3226A5C525F4883800F5DBD7 /* Views */,
 				3226A57325F483FB00F5DBD7 /* GoogleService-Info.plist */,
 				328074EB25F481E400B0A54A /* PediaTracApp.swift */,
 				328074ED25F481E400B0A54A /* ContentView.swift */,
@@ -411,8 +487,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3226A5D325F4883800F5DBD7 /* CustomStyledTextButton.swift in Sources */,
+				3226A5F025F4917A00F5DBD7 /* ChildStruct.swift in Sources */,
+				3226A5F525F4921B00F5DBD7 /* ChildData.swift in Sources */,
+				3226A5DB25F4897400F5DBD7 /* Colors.swift in Sources */,
+				3226A5D125F4883800F5DBD7 /* SignInView.swift in Sources */,
+				3226A5DC25F4897400F5DBD7 /* TermsPrivacy.swift in Sources */,
+				3226A5CF25F4883800F5DBD7 /* ProfileView.swift in Sources */,
 				328074EE25F481E400B0A54A /* ContentView.swift in Sources */,
+				3226A5D425F4883800F5DBD7 /* CustomStyledTextField.swift in Sources */,
+				3226A5FA25F4969C00F5DBD7 /* AddChildView.swift in Sources */,
+				3226A5D225F4883800F5DBD7 /* SignUpView.swift in Sources */,
+				3226A5D025F4883800F5DBD7 /* ResetPasswordView.swift in Sources */,
 				328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */,
+				3226A5CE25F4883800F5DBD7 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +668,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTrac;
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTrac.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -603,7 +691,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTrac;
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTrac.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
