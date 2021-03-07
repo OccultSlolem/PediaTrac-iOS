@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074EB25F481E400B0A54A /* PediaTracApp.swift */; };
+		328074EE25F481E400B0A54A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074ED25F481E400B0A54A /* ContentView.swift */; };
+		328074F025F481E600B0A54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328074EF25F481E600B0A54A /* Assets.xcassets */; };
+		328074F325F481E600B0A54A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328074F225F481E600B0A54A /* Preview Assets.xcassets */; };
+		328074FE25F481E700B0A54A /* PediaTracTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328074FD25F481E700B0A54A /* PediaTracTests.swift */; };
+		3280750925F481E700B0A54A /* PediaTracUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280750825F481E700B0A54A /* PediaTracUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		328074FA25F481E700B0A54A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328074E025F481E300B0A54A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328074E725F481E400B0A54A;
+			remoteInfo = PediaTrac;
+		};
+		3280750525F481E700B0A54A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328074E025F481E300B0A54A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328074E725F481E400B0A54A;
+			remoteInfo = PediaTrac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		328074E825F481E400B0A54A /* PediaTrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PediaTrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		328074EB25F481E400B0A54A /* PediaTracApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediaTracApp.swift; sourceTree = "<group>"; };
+		328074ED25F481E400B0A54A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		328074EF25F481E600B0A54A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		328074F225F481E600B0A54A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		328074F425F481E600B0A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328074F925F481E700B0A54A /* PediaTracTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PediaTracTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		328074FD25F481E700B0A54A /* PediaTracTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediaTracTests.swift; sourceTree = "<group>"; };
+		328074FF25F481E700B0A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3280750425F481E700B0A54A /* PediaTracUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PediaTracUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3280750825F481E700B0A54A /* PediaTracUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediaTracUITests.swift; sourceTree = "<group>"; };
+		3280750A25F481E700B0A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		328074E525F481E400B0A54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328074F625F481E700B0A54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3280750125F481E700B0A54A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		328074DF25F481E300B0A54A = {
+			isa = PBXGroup;
+			children = (
+				328074EA25F481E400B0A54A /* PediaTrac */,
+				328074FC25F481E700B0A54A /* PediaTracTests */,
+				3280750725F481E700B0A54A /* PediaTracUITests */,
+				328074E925F481E400B0A54A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		328074E925F481E400B0A54A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				328074E825F481E400B0A54A /* PediaTrac.app */,
+				328074F925F481E700B0A54A /* PediaTracTests.xctest */,
+				3280750425F481E700B0A54A /* PediaTracUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328074EA25F481E400B0A54A /* PediaTrac */ = {
+			isa = PBXGroup;
+			children = (
+				328074EB25F481E400B0A54A /* PediaTracApp.swift */,
+				328074ED25F481E400B0A54A /* ContentView.swift */,
+				328074EF25F481E600B0A54A /* Assets.xcassets */,
+				328074F425F481E600B0A54A /* Info.plist */,
+				328074F125F481E600B0A54A /* Preview Content */,
+			);
+			path = PediaTrac;
+			sourceTree = "<group>";
+		};
+		328074F125F481E600B0A54A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				328074F225F481E600B0A54A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		328074FC25F481E700B0A54A /* PediaTracTests */ = {
+			isa = PBXGroup;
+			children = (
+				328074FD25F481E700B0A54A /* PediaTracTests.swift */,
+				328074FF25F481E700B0A54A /* Info.plist */,
+			);
+			path = PediaTracTests;
+			sourceTree = "<group>";
+		};
+		3280750725F481E700B0A54A /* PediaTracUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3280750825F481E700B0A54A /* PediaTracUITests.swift */,
+				3280750A25F481E700B0A54A /* Info.plist */,
+			);
+			path = PediaTracUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		328074E725F481E400B0A54A /* PediaTrac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3280750D25F481E700B0A54A /* Build configuration list for PBXNativeTarget "PediaTrac" */;
+			buildPhases = (
+				328074E425F481E400B0A54A /* Sources */,
+				328074E525F481E400B0A54A /* Frameworks */,
+				328074E625F481E400B0A54A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PediaTrac;
+			productName = PediaTrac;
+			productReference = 328074E825F481E400B0A54A /* PediaTrac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		328074F825F481E700B0A54A /* PediaTracTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3280751025F481E700B0A54A /* Build configuration list for PBXNativeTarget "PediaTracTests" */;
+			buildPhases = (
+				328074F525F481E700B0A54A /* Sources */,
+				328074F625F481E700B0A54A /* Frameworks */,
+				328074F725F481E700B0A54A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				328074FB25F481E700B0A54A /* PBXTargetDependency */,
+			);
+			name = PediaTracTests;
+			productName = PediaTracTests;
+			productReference = 328074F925F481E700B0A54A /* PediaTracTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3280750325F481E700B0A54A /* PediaTracUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3280751325F481E700B0A54A /* Build configuration list for PBXNativeTarget "PediaTracUITests" */;
+			buildPhases = (
+				3280750025F481E700B0A54A /* Sources */,
+				3280750125F481E700B0A54A /* Frameworks */,
+				3280750225F481E700B0A54A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3280750625F481E700B0A54A /* PBXTargetDependency */,
+			);
+			name = PediaTracUITests;
+			productName = PediaTracUITests;
+			productReference = 3280750425F481E700B0A54A /* PediaTracUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		328074E025F481E300B0A54A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					328074E725F481E400B0A54A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					328074F825F481E700B0A54A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 328074E725F481E400B0A54A;
+					};
+					3280750325F481E700B0A54A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 328074E725F481E400B0A54A;
+					};
+				};
+			};
+			buildConfigurationList = 328074E325F481E300B0A54A /* Build configuration list for PBXProject "PediaTrac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 328074DF25F481E300B0A54A;
+			productRefGroup = 328074E925F481E400B0A54A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				328074E725F481E400B0A54A /* PediaTrac */,
+				328074F825F481E700B0A54A /* PediaTracTests */,
+				3280750325F481E700B0A54A /* PediaTracUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		328074E625F481E400B0A54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328074F325F481E600B0A54A /* Preview Assets.xcassets in Resources */,
+				328074F025F481E600B0A54A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328074F725F481E700B0A54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3280750225F481E700B0A54A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		328074E425F481E400B0A54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328074EE25F481E400B0A54A /* ContentView.swift in Sources */,
+				328074EC25F481E400B0A54A /* PediaTracApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328074F525F481E700B0A54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328074FE25F481E700B0A54A /* PediaTracTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3280750025F481E700B0A54A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3280750925F481E700B0A54A /* PediaTracUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		328074FB25F481E700B0A54A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328074E725F481E400B0A54A /* PediaTrac */;
+			targetProxy = 328074FA25F481E700B0A54A /* PBXContainerItemProxy */;
+		};
+		3280750625F481E700B0A54A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328074E725F481E400B0A54A /* PediaTrac */;
+			targetProxy = 3280750525F481E700B0A54A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3280750B25F481E700B0A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3280750C25F481E700B0A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3280750E25F481E700B0A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PediaTrac/Preview Content\"";
+				DEVELOPMENT_TEAM = 2W7LLA9UZK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PediaTrac/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTrac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3280750F25F481E700B0A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PediaTrac/Preview Content\"";
+				DEVELOPMENT_TEAM = 2W7LLA9UZK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PediaTrac/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTrac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3280751125F481E700B0A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W7LLA9UZK;
+				INFOPLIST_FILE = PediaTracTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTracTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PediaTrac.app/PediaTrac";
+			};
+			name = Debug;
+		};
+		3280751225F481E700B0A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W7LLA9UZK;
+				INFOPLIST_FILE = PediaTracTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTracTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PediaTrac.app/PediaTrac";
+			};
+			name = Release;
+		};
+		3280751425F481E700B0A54A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W7LLA9UZK;
+				INFOPLIST_FILE = PediaTracUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTracUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PediaTrac;
+			};
+			name = Debug;
+		};
+		3280751525F481E700B0A54A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2W7LLA9UZK;
+				INFOPLIST_FILE = PediaTracUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EthanHanlon.PediaTracUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PediaTrac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		328074E325F481E300B0A54A /* Build configuration list for PBXProject "PediaTrac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3280750B25F481E700B0A54A /* Debug */,
+				3280750C25F481E700B0A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3280750D25F481E700B0A54A /* Build configuration list for PBXNativeTarget "PediaTrac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3280750E25F481E700B0A54A /* Debug */,
+				3280750F25F481E700B0A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3280751025F481E700B0A54A /* Build configuration list for PBXNativeTarget "PediaTracTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3280751125F481E700B0A54A /* Debug */,
+				3280751225F481E700B0A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3280751325F481E700B0A54A /* Build configuration list for PBXNativeTarget "PediaTracUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3280751425F481E700B0A54A /* Debug */,
+				3280751525F481E700B0A54A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 328074E025F481E300B0A54A /* Project object */;
+}
