@@ -1,0 +1,16 @@
+PODS:
+  - NavigationStack (1.0.2)
+
+DEPENDENCIES:
+  - NavigationStack
+
+SPEC REPOS:
+  trunk:
+    - NavigationStack
+
+SPEC CHECKSUMS:
+  NavigationStack: bb6c4f3d1b9fe92f1f6d47370f73c9233ad56272
+
+PODFILE CHECKSUM: a56f3256950da0e153230534469bee6cd5913cc9
+
+COCOAPODS: 1.10.1

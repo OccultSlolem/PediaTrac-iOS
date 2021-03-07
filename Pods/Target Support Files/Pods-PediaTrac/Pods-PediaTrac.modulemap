@@ -1,0 +1,6 @@
+framework module Pods_PediaTrac {
+  umbrella header "Pods-PediaTrac-umbrella.h"
+
+  export *
+  module * { export * }
+}
